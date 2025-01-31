@@ -4,7 +4,7 @@ ActiveAdmin.register_page "Dashboard" do
   content title: proc { I18n.t("active_admin.dashboard") } do
     div class: "blank_slate_container", id: "dashboard_default_message" do
       span class: "blank_slate" do
-        div image_tag("logo-shalom.jpeg", size: "250x250")
+        div image_tag("logo-shalom.jpg", size: "250x250")
         span "Welcome To Shalom Business and Technology College"
         small "This is Shalom Business and Technology College registrar and school management portal system."
       end

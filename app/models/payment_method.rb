@@ -4,7 +4,7 @@ class PaymentMethod < ApplicationRecord
     validates :account_full_name , :presence => true
     validates :payment_method_type , :presence => true
     validates :bank_logo,
-            content_type: ['image/gif', 'image/png', 'image/jpg', 'image/jpeg'], attached: true
+            content_type: ['image/gif', 'image/png', 'image/jpg', 'image/jpg'], attached: true
   ##scope
   	scope :recently_added, lambda { where('created_at >= ?', 1.week.ago)}
   	scope :bank, lambda { where(payment_method_type: "bank")}
