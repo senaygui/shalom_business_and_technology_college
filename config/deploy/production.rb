@@ -1,7 +1,7 @@
 role :app, %w{aacp@15.235.65.231}
 role :web, %w{aacp@15.235.65.231}
 role :db, %w{aacp@15.235.65.231}, :primary => true
-set :branch, "master"
+set :branch, "main"
 set :rails_env, "production"
 set :deploy_to, '/home/aacp/portal_system'
 set :ssh_options, {

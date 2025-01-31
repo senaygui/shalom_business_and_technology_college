@@ -5,7 +5,8 @@ lock "~> 3.17.1"
 set :application, "portal_system"
 set :repo_url, "https://github.com/senaygui/shalom_business_and_technology_college.git"
 # set :ssh_options, { :forward_agent => true, :port => 4321 }
-set :user, "deploy"
+set :user, "aacp"
+set :branch, 'main' 
 set :passenger_restart_with_touch, true
 # set :rbenv_path, '/home/deploy/.rbenv/'
 set :stages, %w(production staging)
